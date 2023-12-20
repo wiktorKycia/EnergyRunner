@@ -9,6 +9,7 @@ namespace EnergyRunner.UI
     internal class Menu
     {
         public List<Choice> Choices { get; set; }
+        private static int IndexOfTheChosenOne = 0;
         public Menu(List<string> names)
         {
             foreach (string name in names)

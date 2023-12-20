@@ -17,6 +17,7 @@ namespace EnergyRunner.UI
                 Choices.Add(choice);
                 
             }
+            Choices[0].isChosen = true;
         }
         public void DisplayMenu()
         {

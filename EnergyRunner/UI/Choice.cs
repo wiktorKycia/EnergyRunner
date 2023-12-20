@@ -13,6 +13,7 @@ namespace EnergyRunner.UI
         public Choice(string label)
         {
             this.label = label;
+            isChosen = false;
         }
     }
 }

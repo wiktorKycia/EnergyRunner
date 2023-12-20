@@ -9,7 +9,7 @@ namespace EnergyRunner.UI
     internal class Menu
     {
         public List<Choice> Choices { get; set; }
-        private static int IndexOfTheChosenOne = 0;
+        private int IndexOfTheChosenOne = 0;
         public Menu(List<string> names)
         {
             foreach (string name in names)
@@ -36,6 +36,14 @@ namespace EnergyRunner.UI
                 Console.WriteLine(choice.label);
             }
             Console.WriteLine();
+        }
+        private void ResetChosenOne()
+        {
+            foreach (Choice choice in Choices)
+            {
+                choice.isChosen = false;
+            }
+            Choices[IndexOfTheChosenOne].isChosen = true;
         }
 
     }

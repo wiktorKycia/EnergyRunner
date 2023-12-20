@@ -8,5 +8,9 @@ namespace EnergyRunner
 {
     static class SpecialSigns
     {
+        public static char Player = '\u2022';
+        public static char Star = '\u2605';
+        public static char Home = '\u2302';
+
     }
 }

@@ -20,7 +20,20 @@ namespace EnergyRunner.UI
         }
         public void DisplayMenu()
         {
-
+            Console.WriteLine();
+            foreach (Choice choice in Choices)
+            {
+                if (choice.isChosen)
+                {
+                    Console.Write($"\t[{SpecialSigns.Player}] ");
+                }
+                else
+                {
+                    Console.Write("\t[ ] ");
+                }
+                Console.WriteLine(choice.label);
+            }
+            Console.WriteLine();
         }
 
     }

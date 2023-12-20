@@ -8,5 +8,11 @@ namespace EnergyRunner.UI
 {
     internal class Choice
     {
+        public bool isChosen { get; set; }
+        public string label { get; set; }
+        public Choice(string label)
+        {
+            this.label = label;
+        }
     }
 }

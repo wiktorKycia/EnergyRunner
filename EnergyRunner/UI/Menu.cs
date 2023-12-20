@@ -8,7 +8,7 @@ namespace EnergyRunner.UI
 {
     internal class Menu
     {
-        public List<Choice> Choices { get; set; }
+        public List<Choice> Choices = new List<Choice> { };
         private int IndexOfTheChosenOne = 0;
         public Menu(List<string> names)
         {

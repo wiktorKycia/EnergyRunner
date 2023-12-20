@@ -45,6 +45,21 @@ namespace EnergyRunner.UI
             }
             Choices[IndexOfTheChosenOne].isChosen = true;
         }
-
+        public void GoUp()
+        {
+            if(IndexOfTheChosenOne + 1 < Choices.Count)
+            {
+                IndexOfTheChosenOne++;
+                ResetChosenOne();
+            }
+        }
+        public void GoDown()
+        {
+            if (IndexOfTheChosenOne - 1 < 0)
+            {
+                IndexOfTheChosenOne--;
+                ResetChosenOne();
+            }
+        }
     }
 }

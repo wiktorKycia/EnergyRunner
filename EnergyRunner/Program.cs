@@ -10,6 +10,11 @@
     }
     class Player
     {
+        public int health { get; set; }
 
+        public Player(int health=100)
+        {
+            this.health = health;
+        }
     }
 }

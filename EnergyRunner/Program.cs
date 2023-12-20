@@ -11,6 +11,8 @@
     class Player
     {
         public int health { get; set; }
+        public int x { get; set; }
+        public int y { get; set; }
 
         public Player(int health=100)
         {

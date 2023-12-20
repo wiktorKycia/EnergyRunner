@@ -8,5 +8,9 @@ namespace EnergyRunner
 {
     internal class Game
     {
+        public Game()
+        {
+            Console.WriteLine("Welcome to EnergyRunner");
+        }
     }
 }

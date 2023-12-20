@@ -8,5 +8,15 @@ namespace EnergyRunner.UI
 {
     internal class Menu
     {
+        public List<Choice> Choices { get; set; }
+        public Menu()
+        {
+            
+        }
+        public void DisplayMenu()
+        {
+
+        }
+
     }
 }

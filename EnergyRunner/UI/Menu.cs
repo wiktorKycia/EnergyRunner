@@ -9,9 +9,14 @@ namespace EnergyRunner.UI
     internal class Menu
     {
         public List<Choice> Choices { get; set; }
-        public Menu()
+        public Menu(List<string> names)
         {
-            
+            foreach (string name in names)
+            {
+                Choice choice = new Choice(name);
+                Choices.Add(choice);
+                
+            }
         }
         public void DisplayMenu()
         {

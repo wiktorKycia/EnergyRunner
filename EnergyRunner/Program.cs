@@ -8,4 +8,8 @@
             Console.WriteLine("\u2022; \u2606; \u2605; \u2B50"); 
         }
     }
+    class Player
+    {
+
+    }
 }

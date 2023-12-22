@@ -1,4 +1,6 @@
-﻿namespace EnergyRunner
+﻿using EnergyRunner.UI;
+
+namespace EnergyRunner
 {
     internal class Program
     {
@@ -6,6 +8,9 @@
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
             Console.WriteLine("\u2022; \u2606; \u2605; \u2B50; \u2302");
+            List<string> names = new List<string>{ "Option 1", "Option 2", "OPtion3"};
+            Menu menu = new Menu(names);
+            menu.DisplayMenu();
         }
     }
     class Player

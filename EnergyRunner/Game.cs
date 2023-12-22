@@ -10,7 +10,7 @@ namespace EnergyRunner
     {
         public Game()
         {
-            Console.WriteLine("Welcome to EnergyRunner");
+            
         }
     }
 }

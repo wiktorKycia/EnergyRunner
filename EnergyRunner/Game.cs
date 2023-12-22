@@ -8,7 +8,7 @@ namespace EnergyRunner
 {
     internal class Game
     {
-        public Game()
+        public Game(int BoardSize, int Stars)
         {
             //board class representing board of the game
             //statistics: player's energy (health); starts (addtional points); stars left;
@@ -16,8 +16,6 @@ namespace EnergyRunner
             /* Game class
              * parameters:
              * - board size
-             * - player location
-             * - home location
              * 
              */
         }

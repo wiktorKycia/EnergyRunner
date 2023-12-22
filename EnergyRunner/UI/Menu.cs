@@ -62,5 +62,9 @@ namespace EnergyRunner.UI
                 ResetChosenOne();
             }
         }
+        public int GetChosen()
+        {
+            return IndexOfTheChosenOne;
+        }
     }
 }
